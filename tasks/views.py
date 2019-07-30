@@ -14,10 +14,15 @@ from tasks.forms import AddTaskForm, TodoItemExportForm, TodoItemForm
 from tasks.models import TodoItem
 from django.shortcuts import redirect, render, get_object_or_404
 from taggit.models import Tag
+from django.conf.urls.static import static
+
+
+def Index(request):
+    return render(request, "Index.html")
 
 @login_required
 def index(request):
-    return HttpResponse("Примитивный ответ из приложения tasks")
+    return HttpResponse("Вы можете зарегестрироваться ('account/registre'),<br> или войти, если вы зарегистрированы ('account/login'),<br>а затем посмотреть и откорректироовать свои задачи на день ('tasks/list'). <br><h2> УДАЧИ!</h2>")
 
 
 def complete_task(request, uid):
