@@ -1,4 +1,4 @@
-Django	2.1.5	
+Django		
 Flask	1.0.2	
 Jinja2	2.10.1	
 Mako	1.0.8	
