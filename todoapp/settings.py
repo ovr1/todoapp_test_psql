@@ -84,7 +84,7 @@ DATABASES = {
         'PASSWORD': 'G24O02d24230303',
         'HOST': '127.0.0.1',
         'PORT': '5432',
-        'default': dj_database_url.config(default=config('DATABASE_URL')
+        'default': test_skillfactory_url.config(default=config('DATABASE_URL')
     }
 }
 
