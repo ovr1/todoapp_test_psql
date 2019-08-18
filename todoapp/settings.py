@@ -75,7 +75,7 @@ WSGI_APPLICATION = "todoapp.wsgi.application"
 
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
-
+from decouple import config
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -84,6 +84,7 @@ DATABASES = {
         'PASSWORD': 'G24O02d24230303',
         'HOST': '127.0.0.1',
         'PORT': '5432',
+        'default': dj_database_url.config(default=config('DATABASE_URL')
     }
 }
 
