@@ -78,8 +78,8 @@ WSGI_APPLICATION = "todoapp.wsgi.application"
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': "postgres",
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': "test_skilfactory",
         'USER': "ovr1",
         'PASSWORD': 'G24O02d24230303',
         'HOST': '127.0.0.1',
